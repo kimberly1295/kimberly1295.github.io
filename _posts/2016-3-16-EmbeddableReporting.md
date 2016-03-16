@@ -130,8 +130,10 @@ In this tutorial, 3 services will be use to bind to the application:
 4. Click the `ADD A SERVICE OR API` to add the services to your application.
 
 5. In the `CATALOG` page, add the following services:
+
+
 	||||
-|---|---|---|
+	|---|---|---|
 		| **Data management service** | IBM Cloudant NoSQL DB |		
 		| **Database service** | IBM dashDB |		
 		| **Business Analytics** | Embeddable Reporting |	
@@ -194,7 +196,7 @@ In this tutorial, 3 services will be use to bind to the application:
 5. From the `VCAP_SERVICES`, under the `DASHDB`, copy the `username`, `password`, `jdbcurl` values of the dashDB service.
 
 5.  	Enter the following credentials:
-||||
+	||||
 	|---|---|---|
 		| **Name** | ERS |		
 		| **Description** | you can leave this blank |		
@@ -232,7 +234,8 @@ Then select `create`
 17.  Select `View`, then `Report Pages`. Select `Page1`from the list of Report Pages.
 
 18. Under  `data items`, drag the following: 
-||||
+
+	||||
 	|---|---|---|
 		| **Y-axis or Values** | count_incidents |		
 		| **x-axis or Categories** | Year |		
@@ -254,7 +257,9 @@ Then select `create`
 25. From the `VCAP_SERVICES`, under the `erservice`, copy the `userid` and `password` values of the erservice. 
 
 25. Enter your  the following to the credentials:
-|---|---|---|
+
+	||||
+	|---|---|---|
 		| **UserId** | `userid` |		
 		| **Password** | `password` |		
 
