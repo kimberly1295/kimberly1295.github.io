@@ -14,7 +14,7 @@ In this tutorial, 3 services will be use to bind to the application:
  
  **Database Service** (use to store report data)
  - IBM dashDB
- - 
+ 
 **Reporting Service** (use to create reports)
  - Embeddable Reporting
 
