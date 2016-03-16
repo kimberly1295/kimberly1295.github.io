@@ -18,10 +18,6 @@ In this tutorial, 3 services will be use to bind to the application:
 **Reporting Service** (use to create reports)
  - Embeddable Reporting
 
->**Copy a Github Repository**
-
->Having a basic background in web application development is required in this tutorial.
-
 <br>
 
 ####Copy a Github Repository
