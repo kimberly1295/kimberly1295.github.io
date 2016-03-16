@@ -139,7 +139,7 @@ In this tutorial, 3 services will be use to bind to the application:
 8. Open a new tab and go to `http://ers-<your_name>.mybluemix.net` to test if the application can connect to the Embeddable Reporting service. 
 
 9. Access this [link](https://github.com/kimberly1295/kimberly1295.github.io/blob/master/sample.json)
-and save this file as `incidents.json`
+and save this file as `sample.json`
 
 10. Click the `Upload` button under  the `Add Data to Cloudant` header.
  >The Upload button adds a NoSQL JSON style format bulk insertion to Cloudant. 
