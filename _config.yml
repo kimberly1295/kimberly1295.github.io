@@ -3,7 +3,7 @@
 #
 
 # Name of your site (displayed in the header)
-name: Pong V. Pantola
+name: Kimberly Pol
 
 # Short bio or description (displayed in the header)
 description: web developer
@@ -18,10 +18,10 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: pantolav@gmail.com
-  facebook: pong.pantola@delasalle.ph
+  email: kmbrlpl12@gmail.com
+  facebook: 
   flickr:
-  github: pong-pantola/jekyll-now
+  github: 
   instagram:
   linkedin:
   pinterest:
@@ -41,13 +41,13 @@ google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: "http://kimberly1295.github.io"
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: "http://pong-pantola.github.io"
+baseurl: "http://kimberly1295.github.io"
 
 #
 # !! You don't need to change any of the configuration flags below !!
