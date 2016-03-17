@@ -190,6 +190,8 @@ and save this file as `sample.json`
 5. From the `VCAP_SERVICES`, under the `DASHDB`, copy the `username`, `password`, `jdbcurl` values of the dashDB service.
 
 5. Enter the credentials of the following:
+
+
 	||||
 	|---|---|---|
 		| **Name** | ERS |		
