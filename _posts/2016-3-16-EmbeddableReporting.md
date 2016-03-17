@@ -262,20 +262,20 @@ Then select `create`
 		| **Password** | `password` |		
 
 23. An HTTP status code of 200 is returned if the credentials are entered correctly and response is returned with the values of `bundleUri` and `connectionId`
-> `{
+`````{
   "bundleUri": "https://2549fade-55f6-4bfc-8791-f06f99e1feeb-bluemix:c288fcf5d6cfa5df0cc7f8480c2c00b298986c2b4567466ff699236d287403d7@2549fade-55f6-4bfc-8791-f06f99e1feeb-bluemix.cloudant.com",
   "connectionId": "MMamLqLiQxuHTLWDqcdHBA"
- } ` 
+ }````` 
 
 22. Select  `Definitions` then `GET /definitions/`, Select the `Try it out!` button 
 
-22. Copy the `url` value of the response 
->`{
+22. Copy the `url` value of the response <br>
+````{
     "name": "chart 2 report", 
-    "url": "/ers/v1/definitions/1a6ea150a995dd0d87e44dd9bbca0d0d",
+   "url": "/ers/v1/definitions/1a6ea150a995dd0d87e44dd9bbca0d0d",
     "type": "application/vnd.ibm.ers.v1.definitions+json",
-    "id": "1a6ea150a995dd0d87e44dd9bbca0d0d"
->  },` 
+   "id": "1a6ea150a995dd0d87e44dd9bbca0d0d"
+  },```` 
 
 22. Open a new tab and go to `http://ers-<your_name>.mybluemix.net`  to access your application. 
 
