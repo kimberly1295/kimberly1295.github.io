@@ -272,9 +272,9 @@ Then select `create`
 22. Copy the `url` value of the response 
 >`{
     "name": "chart 2 report", 
-   "url": "/ers/v1/definitions/1a6ea150a995dd0d87e44dd9bbca0d0d",
+    "url": "/ers/v1/definitions/1a6ea150a995dd0d87e44dd9bbca0d0d",
     "type": "application/vnd.ibm.ers.v1.definitions+json",
-   "id": "1a6ea150a995dd0d87e44dd9bbca0d0d"
+    "id": "1a6ea150a995dd0d87e44dd9bbca0d0d"
 >  },` 
 
 22. Open a new tab and go to `http://ers-<your_name>.mybluemix.net`  to access your application. 
