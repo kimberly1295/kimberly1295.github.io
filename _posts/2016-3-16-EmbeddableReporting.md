@@ -193,7 +193,7 @@ and save this file as `sample.json`
  
 5. From the `VCAP_SERVICES`, under the `DASHDB`, copy the `username`, `password`, `jdbcurl` values of the dashDB service.
 
-5.  	Enter the following credentials:
+5. Enter the credentials of the following:
 	||||
 	|---|---|---|
 		| **Name** | ERS |		
@@ -285,7 +285,7 @@ Then select `create`
 
 <br>
 
-####**Delete the Application and Object Storage Service**
+####**Delete the Application and the Services**
 1. Go to [IBM Bluemix](ibm.biz/bluemixph) Website and click the `Dashboard`.
 2. From the `Applications` section, click the `gear` icon in the widget of the `ers-<your_name>` application.
 3. Select the `Delete App` from the list.
