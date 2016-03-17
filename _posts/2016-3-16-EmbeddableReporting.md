@@ -268,7 +268,6 @@ Then select `create`
   "connectionId": "MMamLqLiQxuHTLWDqcdHBA"
  }
  ```` 
-
 22. Select  `Definitions` then `GET /definitions/`, Select the `Try it out!` button 
 
 22. Copy the `url` value of the response <br>
