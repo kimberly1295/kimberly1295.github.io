@@ -233,9 +233,9 @@ Then select `create`
 
 15. For the step 5, another way to do this is to enter count(), then inside the `( )` double-click the `INCIDNTNUM` from the SQL1. 
 
-> Note that this step is optional.
+	> Note that this step is optional.
 
-15.  We will create another data item called `year` then repeat step number 4 for the creation of new data item.
+16.   We will create another data item called `year` then repeat step number 4 for the creation of new data item.
 
 16.  Change the name to  `year` and under the Expression Definition enter the following `substr([SQL1].[DATE],1,4)`. Click `validate`, the green icon with a check mark, once no errors displayed select OK.
 
@@ -287,7 +287,7 @@ Then select `Login`
 
 22. Copy the `url` value of the response <br>
 
->````
+	>````
 {
     "name": "chart 2 report", 
    "url": "/ers/v1/definitions/1a6ea150a995dd0d87e44dd9bbca0d0d",
