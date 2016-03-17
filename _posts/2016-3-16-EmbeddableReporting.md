@@ -155,10 +155,6 @@ and save this file as `sample.json`
 
 ####**Creating a Warehouse to transform JSON data into relational tables**
 
-15.   From the `Cloudant Dashboard`, navigate to the Warehousing tab, and click the `New Warehouse`. 
-
-16.  Select the `incidents`  database. 
-
 17. Click the `Warehousing` and Select `Create a dashDB warehouse`. 
 >Note: Only one warehouse can be created.
 
