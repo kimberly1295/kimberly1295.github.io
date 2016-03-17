@@ -297,7 +297,7 @@ Then select `Login`
   
 22. Go to `http://ers-<your_name>.mybluemix.net`  to access your application. 
 
-23. Under the `View Reports` label enter the `url` value from number 20, select view report button.
+23. Under the `View Reports` label enter the `url` value, select view report button.
 
 24. An iframe will be displayed that contains the report, created using the embeddable reporting service, in the application. A link `access report` is also displayed to view the chart. 
 
