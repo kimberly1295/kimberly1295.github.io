@@ -299,7 +299,7 @@ Then select `Login`
 
 23. Under the `View Reports` label enter the `url` value from number 20, select view report button.
 
-23. Select the link `access report` to view the chart created using the embeddable reporting service in the application. 
+24. An iframe will be displayed that contains the report, created using the embeddable reporting service, in the application. A link `access report` is also displayed to view the chart. 
 
 <br>
 
