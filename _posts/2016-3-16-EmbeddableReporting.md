@@ -153,6 +153,7 @@ and save this file as `sample.json`
 
 14. Using the  Cloudant Web Console, check if the database name `incidents` exist.
 
+
 ####**Creating a Warehouse to transform JSON data into relational tables**
 
 17. Click the `Warehousing` and Select `Create a dashDB warehouse`. 
@@ -166,23 +167,29 @@ and save this file as `sample.json`
 
 18. Select the `dashDB service instance`, then select `dashDB-<name>`, the service you have binded earlier.
 
+19. Select `create warehouse`. A warning will be showed about modifying an existing warehouse, just select `Continue`
+
 18. The newly created warehouse can be viewed in the dashDB dashboard.
+
 
 <br>
 
 ####**Access Warehouse in the IBM dashDB instance**
-1. Under `Services`, click the `dashDB` service.
+1. From the Cloudant dashboard select the `Open in dashDB`
 
-2.  Select the `Go to your tables`, then at the `Table Name` select `incidents`
+2. On the right side of the screen select `Tables`, then at the `Table Name` select `incidents`
 
 3. This displays the json file was transformed into a relational table.
 
 ####**Use Cloudant as connect source for Embeddable Reporting service**
 1. From the `VCAP_SERVICES`, under the `CLOUDANTNOSQLDB`, copy the `url` value of the cloudant service.
 
-2. Under `Services`, click the `Embeddable` service.
+2. Under `Services`, click the `Embeddable Reporting` service.
 
 3. Under `Repository URI`, enter the `url` value of the cloudant service and click `start`
+
+> Note: do not include the `" "` quotations marks in placing the url value of the cloudant.
+This is where the report artifacts are stored.
 
 ####**Add IBM dashDB Connection details in Emebbedable Reporting service instance as data source**
 4. Select the `New Package`
@@ -196,10 +203,11 @@ and save this file as `sample.json`
 	|---|---|---|
 		| **Name** | ERS |		
 		| **Description** | you can leave this blank |		
-		| **JDBC URI:** | `jdbcurl` |		
-		| **User Name:** |  `username` |	
-		| **User Password:** |`password` |		
+		| **JDBC URI:** | `<jdbcurl values>` |		
+		| **User Name:** |  `<username values>` |	
+		| **User Password:** |`<password values>` |		
 Then select `create` 	
+> Note: do not include the `" "` quotations marks in placing the values.
 	
 6. Under `Report Definitions` select the `New Report Definitions`
 
@@ -221,11 +229,15 @@ Then select `create`
 
 13. Select `toolbox` from the left pane, drag the `data item` to the Data Items
 
-14. Change the name to  `count_incidents` and under the Expression Definition enter the following `count([SQL1].[IncidntNum])`. Click `validate`, the green icon with a check mark, once no errors displayed select OK.
+14. Change the name to  `count_incidents` and under the Expression Definition enter the following `count([SQL1].[INCIDNTNUM])`. Click `validate`, the green icon with a check mark, once no errors displayed select OK.
+
+15. For the step 5, another way to do this is to enter count(), then inside the `( )` double-click the `INCIDNTNUM` from the SQL1. 
+
+> Note that this step is optional.
 
 15.  We will create another data item called `year` then repeat step number 4 for the creation of new data item.
 
-16.  Change the name to  `year` and under the Expression Definition enter the following `substr([SQL1].[Date],1,4)`. Click `validate`, the green icon with a check mark, once no errors displayed select OK.
+16.  Change the name to  `year` and under the Expression Definition enter the following `substr([SQL1].[DATE],1,4)`. Click `validate`, the green icon with a check mark, once no errors displayed select OK.
 
 17.  Select `View`, then `Report Pages`. Select `Page1`from the list of Report Pages.
 
@@ -234,13 +246,17 @@ Then select `create`
 	||||
 	|---|---|---|
 		| **Y-axis or Values** | count_incidents |		
-		| **x-axis or Categories** | Year |		
+		| **x-axis or Categories** | year |		
 		| **Series** | PdDistrict |	
-> The chart created displays from 2003 to 2015 of the number of incidents happen per year.
+> The chart created displays from 2003 to 2015 the number of incidents happened per year.
+
+18. For the `year` at the x-axis, select the `sort` icon, then select `ascending`
 
 18. Click the run report, play icon, to display the chart.
 
 19. Save the report by clicking `File` then `Save` on the toolbar. 
+
+20. Save the Report as `Chart Report` 
 
 20. Reports can be authored in the Embeddable Service Dashboard.
 
@@ -256,8 +272,9 @@ Then select `create`
 
 	||||
 	|---|---|---|
-		| **UserId** | `userid` |		
-		| **Password** | `password` |		
+		| **UserId** | `<userid value>` |		
+		| **Password** | `<password value>` |		
+Then select `Login`
 
 23. An HTTP status code of 200 is returned if the credentials are entered correctly and response is returned with the values of `bundleUri` and `connectionId`
 >````
@@ -276,10 +293,9 @@ Then select `create`
    "url": "/ers/v1/definitions/1a6ea150a995dd0d87e44dd9bbca0d0d",
     "type": "application/vnd.ibm.ers.v1.definitions+json",
    "id": "1a6ea150a995dd0d87e44dd9bbca0d0d"
-  },
-  ```` 
-
-22. Open a new tab and go to `http://ers-<your_name>.mybluemix.net`  to access your application. 
+  }, ````
+  
+22. Go to `http://ers-<your_name>.mybluemix.net`  to access your application. 
 
 23. Under the `View Reports` label enter the `url` value from number 20, select view report button.
 
