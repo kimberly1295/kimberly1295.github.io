@@ -177,7 +177,7 @@ and save this file as `sample.json`
 ####**Access Warehouse in the IBM dashDB instance**
 1. From the Cloudant dashboard select the `Open in dashDB`
 
-2. On the right side of the screen select `Tables`, then at the `Table Name` select `incidents`
+2. On the left side of the screen select `Tables`, then at the `Table Name` select `incidents`
 
 3. This displays the json file was transformed into a relational table.
 
