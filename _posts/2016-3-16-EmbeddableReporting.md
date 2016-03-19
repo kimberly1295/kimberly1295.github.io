@@ -19,7 +19,7 @@ In this tutorial, 3 services will be used to bind to the application:
  - Embeddable Reporting
 
 <br>
-
+You may access the [ppt](https://github.com/kimberly1295/kimberly1295.github.io/raw/master/Embeddable%20Reporting.pptx) here
 ####Copy a Github Repository
 1. Open a web browser and login to [Github](https://github.com) .
 1. Go to the Github Repository https://github.com/kimberly1295/EmbeddableReporting
